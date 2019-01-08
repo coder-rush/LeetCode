@@ -13,14 +13,13 @@ class Solution(object):
         """
         if not root:
             return []
-        c = 0
         level = [root]
         res = []
-        flag = 1
+        rev = 1
         while (level):
-            c += 1
-            flag *= -1
-            res.append([node.val for node in level[::flag]])
+            #Reverse the current traversal order
+            rev *= -1
+            res.append([node.val for node in level[::rev]])
             next_level = []
 
             for node in level:
