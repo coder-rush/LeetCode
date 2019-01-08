@@ -17,7 +17,7 @@ class Solution(object):
         res = []
         rev = 1
         while (level):
-            #Reverse the current traversal order
+            #Reverse the current traversal order of the result
             rev *= -1
             res.append([node.val for node in level[::rev]])
             next_level = []
