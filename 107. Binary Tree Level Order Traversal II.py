@@ -17,6 +17,7 @@ class Solution(object):
         ans = []
         while len(level) != 0:
             #The trick is here, instead of adding the nodes to the end of the answer add it to the start of answer
+            # so that the elements are added to the start of the list
             ans.insert(0, [node.val for node in level])
             next_level = []
             for node in level:
