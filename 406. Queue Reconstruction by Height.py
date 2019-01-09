@@ -4,6 +4,7 @@ class Solution(object):
         :type people: List[List[int]]
         :rtype: List[List[int]]
         """
+        #sort by height first and then by indexes
         dic = dict()
         height = []
         for h,i in people:
