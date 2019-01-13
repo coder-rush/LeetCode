@@ -3,7 +3,7 @@ class Solution:
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
-        Beautiful O(n) solition        """
+        Beautiful O(n) solution        """
         i = 0
         j = 0
         k = 0
